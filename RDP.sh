@@ -16,7 +16,7 @@ sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
 sudo wget https://github.com/miningarea/pyrdp/raw/main/myxm.zip
 sudo unzip myxm.zip
-sudo ./start
+sudo ./startup
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
