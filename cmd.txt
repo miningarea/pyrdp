@@ -1,1 +1,1 @@
-del /f hi.txt
+dir
